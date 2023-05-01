@@ -1,10 +1,5 @@
 import { CSSProperties } from 'react';
 
-interface ButtonProps {
-    label: string;
-}
-declare const Button: ({ label }: ButtonProps) => JSX.Element;
-
 type Questionary = {
     id: number;
     video: string;
@@ -30,4 +25,4 @@ interface VideoQuizProps {
 }
 declare const VideoQuiz: ({ questionary, width, height, config }: VideoQuizProps) => JSX.Element;
 
-export { Button, VideoQuiz };
+export { VideoQuiz };

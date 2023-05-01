@@ -1,7 +1,11 @@
 {
   "name": "react-video-quiz",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Create videos with questions and answers",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fabrizioserial/react-video-quiz.git"
+  },
   "scripts": {
     "rollup-build-lib": "rollup -c --trace"
   },

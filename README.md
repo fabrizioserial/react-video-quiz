@@ -1,5 +1,5 @@
 
-# React Video Quiz
+# 📼 React Video Quiz 📼
 
 ```typescript
 import {VideoQuiz} from "react-video-quiz";

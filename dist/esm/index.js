@@ -27,13 +27,6 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$1 = ".button {\n  background-color: lightgray;\n  color: black;\n  border-radius: 12px;\n  padding: 8px 24px;\n}\n.button:hover {\n  background-color: gray;\n  color: black;\n}";
-styleInject(css_248z$1);
-
-const Button = ({ label }) => {
-    return React.createElement("button", { className: 'button' }, label);
-};
-
 var css_248z = ".videoContainer {\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n\n.option1-horizontal {\n  position: absolute;\n  height: 100%;\n  bottom: 0;\n  top: 0;\n  left: 0;\n  width: 0;\n}\n.option1-vertical {\n  position: absolute;\n  width: 100%;\n  top: 0;\n  left: 0;\n  height: 0;\n}\n.option1 video {\n  object-fit: cover;\n}\n.option1.full-horizontal {\n  width: 100% !important;\n  transition: all ease-in-out 1s;\n}\n.option1.full-vertical {\n  height: 100% !important;\n  transition: all ease-in-out 1s;\n}\n.option1.close-horizontal {\n  width: 0 !important;\n  transition: all ease-in-out 1s;\n}\n.option1.close-vertical {\n  height: 0 !important;\n  transition: all ease-in-out 1s;\n}\n.option1.open-horizontal {\n  width: 50%;\n  transition: all ease-in-out 1s;\n}\n.option1.open-vertical {\n  height: 50%;\n  transition: all ease-in-out 1s;\n}\n\n.option2-horizontal {\n  position: absolute;\n  bottom: 0;\n  top: 0;\n  right: 0;\n  width: 0;\n  height: 100%;\n}\n.option2-vertical {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  height: 0;\n  width: 100%;\n}\n.option2 video {\n  object-fit: cover;\n}\n.option2.full-horizontal {\n  width: 100% !important;\n  transition: all ease-in-out 1s;\n}\n.option2.full-vertical {\n  height: 100% !important;\n  transition: all ease-in-out 1s;\n}\n.option2.close-horizontal {\n  width: 0 !important;\n  transition: all ease-in-out 1s;\n}\n.option2.close-vertical {\n  height: 0 !important;\n  transition: all ease-in-out 1s;\n}\n.option2.open-horizontal {\n  width: 50%;\n  transition: all ease-in-out 1s;\n}\n.option2.open-vertical {\n  height: 50%;\n  transition: all ease-in-out 1s;\n}\n\n.text-container {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.28);\n  z-index: 1;\n  overflow: hidden;\n}\n.text-container.close {\n  background-color: transparent;\n  z-index: -9999;\n  transition: all ease-in-out 1.5s;\n}\n\n.hide {\n  display: none;\n}\n\n.video {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n}\n.video video {\n  object-fit: cover;\n}\n.video.close-horizontal {\n  width: 50% !important;\n  transition: all ease-in-out 1s;\n}\n.video.close-vertical {\n  height: 50% !important;\n  transition: all ease-in-out 1s;\n}\n.video.close.disappear {\n  top: -9999px !important;\n  z-index: -9999;\n}";
 styleInject(css_248z);
 
@@ -211,4 +204,4 @@ const VideoQuiz = ({ questionary, width = '300px', height = '600px', config }) =
             React.createElement(VideoComponent, { questionary: questionary, config: config }))));
 };
 
-export { Button, VideoQuiz };
+export { VideoQuiz };
