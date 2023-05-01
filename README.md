@@ -5,17 +5,35 @@
 import {VideoQuiz} from "react-video-quiz";
 ```
 
+<br/>
+<br/>
 
+## 🧾 TODO
+- [x] Continuous Delivery
+- [ ] Add prettier
+---
+- [ ] Test in different browsers
+- [ ] Test with different video sources
+- [ ] Test in mobile and tablet
+- [ ] Add tests
+---
+- [ ] Add more documentation
+- [ ] Add more examples
 
-## Install
+<br/>
+<br/>
+<br/>
+
+## 🖥️ Install
 
 To install the library, please run the following code in your terminal:
 ```bash
 npm install react-video-quiz
 ```
+<br/>
+<br/>
 
-
-## Props
+## 🧾 Props
 
 `<VideoQuiz>` component:
 
@@ -26,8 +44,10 @@ width | `string` `number` | '300px' | no       | Possible values for width can b
 height | `string` `number` | '600px' | no       | Possible values for width can be 100% or 600px or 600
 config | `Object`          | none   | no       | The configuration object, see the options API below
 
----
-## Questionary API
+<br/>
+<br/>
+
+## 🧾 Questionary API
 
 ```tsx
 type Questionary = {
@@ -42,10 +62,10 @@ type Questionary = {
 
 }
 ```
+<br/>
+<br/>
 
-
-
-## Configuration API
+## 🧾 Configuration API
 
 ```tsx
  type VideoConfig = {
@@ -113,7 +133,7 @@ Class name for the text container.
 
 
 
-## Example
+## 🧪 Example
 
 ```tsx
 import React from 'react';
@@ -176,8 +196,10 @@ export function MyApp() {
 }
 
 ```
+<br/>
+<br/>
 
-## License
+## 🏛️ License
 
 React Video Quiz is released under MIT license. You are free to use, modify and distribute this software, as long as the copyright header is left intact.
 
