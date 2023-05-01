@@ -1,0 +1,43 @@
+{
+  "name": "react-video-quiz",
+  "version": "0.1.3",
+  "description": "Create videos with questions and answers",
+  "scripts": {
+    "rollup-build-lib": "rollup -c --trace"
+  },
+  "author": "Serial Fabrizio",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/react": "^18.2.0",
+    "classnames": "^2.3.2",
+    "css-loader": "^6.7.3",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.21.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^10.2.0",
+    "style-loader": "^3.3.2",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
