@@ -5,7 +5,7 @@
 }
 
 .option1 {
-  &-horizontal{
+  &-horizontal {
     position: absolute;
     height: 100%;
     bottom: 0;
@@ -13,7 +13,8 @@
     left: 0;
     width: 0;
   }
-  &-vertical{
+
+  &-vertical {
     position: absolute;
     width: 100%;
     top: 0;
@@ -26,41 +27,44 @@
   }
 
   &.full {
-    &-horizontal{
+    &-horizontal {
       width: 100% !important;
       transition: all ease-in-out 1s;
     }
-    &-vertical{
+
+    &-vertical {
       height: 100% !important;
       transition: all ease-in-out 1s;
     }
   }
 
   &.close {
-    &-horizontal{
+    &-horizontal {
       width: 0 !important;
       transition: all ease-in-out 1s;
     }
-    &-vertical{
+
+    &-vertical {
       height: 0 !important;
       transition: all ease-in-out 1s;
     }
   }
 
   &.open {
-    &-horizontal{
-      width: 50% ;
+    &-horizontal {
+      width: 50%;
       transition: all ease-in-out 1s;
     }
-    &-vertical{
-      height: 50% ;
+
+    &-vertical {
+      height: 50%;
       transition: all ease-in-out 1s;
     }
   }
 }
 
 .option2 {
-  &-horizontal{
+  &-horizontal {
     position: absolute;
     bottom: 0;
     top: 0;
@@ -68,7 +72,8 @@
     width: 0;
     height: 100%;
   }
-  &-vertical{
+
+  &-vertical {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -81,34 +86,37 @@
   }
 
   &.full {
-    &-horizontal{
+    &-horizontal {
       width: 100% !important;
       transition: all ease-in-out 1s;
     }
-    &-vertical{
+
+    &-vertical {
       height: 100% !important;
       transition: all ease-in-out 1s;
     }
   }
 
   &.close {
-    &-horizontal{
+    &-horizontal {
       width: 0 !important;
       transition: all ease-in-out 1s;
     }
-    &-vertical{
+
+    &-vertical {
       height: 0 !important;
       transition: all ease-in-out 1s;
     }
   }
 
   &.open {
-    &-horizontal{
-      width: 50% ;
+    &-horizontal {
+      width: 50%;
       transition: all ease-in-out 1s;
     }
-    &-vertical{
-      height: 50% ;
+
+    &-vertical {
+      height: 50%;
       transition: all ease-in-out 1s;
     }
   }
@@ -150,15 +158,16 @@
 
   video {
     object-fit: cover;
-
+    height: 100%;
   }
 
   &.close {
-    &-horizontal{
+    &-horizontal {
       width: 50% !important;
       transition: all ease-in-out 1s;
     }
-    &-vertical{
+
+    &-vertical {
       height: 50% !important;
       transition: all ease-in-out 1s;
     }
