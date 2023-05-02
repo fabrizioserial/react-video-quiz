@@ -1,6 +1,6 @@
 
 # 📼 React Video Quiz 📼
-
+[![NPM](https://img.shields.io/npm/v/react-video-quiz.svg)](https://www.npmjs.com/package/react-video-quiz)
 ```typescript
 import {VideoQuiz} from "react-video-quiz";
 ```
@@ -9,7 +9,7 @@ import {VideoQuiz} from "react-video-quiz";
 <br/>
 
 ## 🧾 TODO
-- [x] Continuous Delivery
+- [x] ~~Continuous Delivery~~
 - [ ] Add prettier
 ---
 - [ ] Test in different browsers
@@ -70,7 +70,7 @@ type Questionary = {
 ```tsx
  type VideoConfig = {
     
-    onFinish?: (args?: any) => ( void | {} );
+    onFinish?: (answers: number[]) => ( void | {} );
     
     containerStyle?: CSSProperties;
     
@@ -92,7 +92,7 @@ type Questionary = {
 
 
 ### `onFinish`
-Type: `(args?: any) => ( void | {} )`
+Type: `(answers: number[]) => ( void | {} )`
 
 Callback function that will be called when the user finishes the quiz.
 
@@ -187,7 +187,7 @@ export function MyApp() {
             width={300}
             height={600}
             config={{
-                onFinish: () => {
+                onFinish: (answers: number[]) => {
                     console.log('Quiz finished');
                 }
             }}

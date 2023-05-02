@@ -101,7 +101,7 @@ const VideoComponent = ({questionary, config}: VideoComponentProps) => {
                 <video
                     onEnded={() => {
                         if (isLeaf) {
-                            onFinish && onFinish()
+                            onFinish && onFinish(context.currentOption)
                         } else {
                             setFinished(true)
                         }
@@ -159,7 +159,7 @@ const VideoComponent = ({questionary, config}: VideoComponentProps) => {
                 color: 'white',
                 borderStyle: 'none',
                 display: context.currentOption.length === 0 ? 'block' : 'none'
-            }} onClick={() => context.updateCurrentOption(1)} title={'Play'}>
+            }} onClick={() => context.updateCurrentOption(questionary?.id)} title={'Play'}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
                     <path
                         d="M22.9243 12.1368C24.3586 12.9649 24.3586 15.035 22.9243 15.8631L3.56213 27.0419C2.12789 27.8699 0.335093 26.8348 0.335093 25.1787L0.335094 2.82119C0.335094 1.16508 2.12789 0.130005 3.56213 0.958062L22.9243 12.1368Z"

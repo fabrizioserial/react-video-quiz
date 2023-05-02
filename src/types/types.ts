@@ -8,7 +8,7 @@ export type Questionary = {
 }
 
 export type VideoConfig = {
-    onFinish?: () => void;
+    onFinish?: (answers:number[]) => void;
     containerStyle?: CSSProperties;
     videoStyle?: CSSProperties;
     videoClassName?: string;
